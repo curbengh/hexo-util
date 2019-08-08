@@ -1,13 +1,13 @@
 {
   "name": "hexo-util",
-  "version": "0.6.3",
+  "version": "1.0.0-rc3",
   "description": "Utilities for Hexo.",
   "main": "lib/index",
   "scripts": {
     "eslint": "eslint .",
     "test": "mocha test/index.js",
     "test-cov": "nyc npm run test",
-    "build:highlight": "node scripts/build_highlight_alias.js > highlight_alias.json",
+    "build:highlight": "node scripts/build_highlight_alias.js",
     "prepare": "npm run build:highlight"
   },
   "directories": {
@@ -16,7 +16,8 @@
   },
   "files": [
     "lib/",
-    "scripts/"
+    "scripts/",
+    "highlight_alias.json"
   ],
   "repository": "hexojs/hexo-util",
   "homepage": "https://hexo.io/",
